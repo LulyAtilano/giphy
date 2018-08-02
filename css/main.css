@@ -1,14 +1,21 @@
 body {
-    background-color: aquamarine;
+    background-image: url("../assets/bc-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Raleway';
+}
+
+h2 {
+    padding: 15px 0;
+    margin: 0;
 }
 
 /* *****  MAIN ***** */ 
 .container {
     width: 80%;
-    margin: 8em auto;
+    margin: 2em auto;
     text-align: center;
-    padding: 4%;
+    /*padding: 2em auto;*/
     box-sizing: border-box;
 }
 
@@ -16,7 +23,7 @@ body {
     padding: 1em;
 }
 
-/* *****  CONTAINER - INSERT GIFS ***** */ 
+/* *****  CONTAINER - SEARCH-GIFS ***** */ 
 #searchGif {
     box-sizing: border-box;
 }
@@ -30,9 +37,9 @@ body {
     top: .3em;
 }
 
-#searchGif div.col.s12 {
+#searchGif.row div.col.s12 {
     border: 1px solid white;
-    margin-top: 3.5em;
+    margin-top: 0;
     padding: 1.5em;
 }
 
@@ -42,11 +49,7 @@ body {
 }
 
 
-/* *****  CONTAINER - INSERT GIFS ***** */ 
-/*#insertGif {
-    padding: 2em 1em;
-}*/
-
+/* *****  CONTAINER - INSERT-GIFS ***** */ 
 #elementos {
     min-height: 15em;
     padding: 2em 1em;
@@ -66,4 +69,10 @@ img.elemento {
 .itemsCount {
     display: block;
     color: white;
+}
+
+p {
+    color: white;
+    font-size: 2em;
+    text-align: left;
 }

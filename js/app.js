@@ -1,8 +1,15 @@
 $(document).ready(function() {
     var dibujarGifs = function(data) {
         var gif= "";
-        /*var countGifs= "";
-        countGifs = data.length;*/
+        var countGifs= "";
+        countGifs = data.length;
+
+        /* Crear el parrafo donde aparecen los gifs encontrados */
+        var paragraph = document.createElement('p');
+        var countText = document.createTextNode("We found: " + countGifs + " gifs");
+        /*$(countText).append(countGifs);*/
+        paragraph.appendChild(countText);
+        $('#elementos').append(paragraph);
 
         data.forEach(function (element) {
             gif = element.images.downsized_large.url;
