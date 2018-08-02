@@ -1,16 +1,17 @@
 $(document).ready(function() {
     var dibujarGifs = function(data) {
         var gif= "";
-        var url= "";
+        /*var countGifs= "";
+        countGifs = data.length;*/
+
         data.forEach(function (element) {
             gif = element.images.downsized_large.url;
-            url = element.bitly_gif_url;
-            $("#elementos").append(armarTemplate(gif, url));
+            $("#elementos").append(armarTemplate(gif));
         });
     }
 
     var armarTemplate = function(gif,url) {
-        var t= "div class='elemento'><img src='" + gif + "'/><a href='" + url + "'> See more </a></div>"
+        var t= "<img class='elemento'src='" + gif + "'/>"
         return t;
     }
 
