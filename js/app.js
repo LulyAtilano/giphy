@@ -17,7 +17,7 @@ $(document).ready(function() {
         });
     }
 
-    var armarTemplate = function(gif,url) {
+    var armarTemplate = function(gif) {
         var t= "<img class='elemento'src='" + gif + "'/>"
         return t;
     }
@@ -48,3 +48,4 @@ $(document).ready(function() {
         ajaxGif(gif);
     });
 });
+
